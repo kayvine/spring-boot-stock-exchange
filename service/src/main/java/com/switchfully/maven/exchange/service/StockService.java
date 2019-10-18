@@ -5,11 +5,13 @@ import com.switchfully.maven.exchange.domain.StockCurrency;
 import com.switchfully.maven.exchange.domain.StockPrice;
 import com.switchfully.maven.exchange.domain.StockRepository;
 import com.switchfully.maven.exchange.interfaces.ExternalStockInformationService;
+import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+@Component
 public class StockService {
 
     private final static Logger LOGGER = Logger.getLogger(StockService.class.getName());
